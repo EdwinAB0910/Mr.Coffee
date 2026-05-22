@@ -1,0 +1,71 @@
+{
+    "pagina_titulo_inicio": "Home | Mr. Coffee",
+    "pagina_titulo_historia": "History | Mr. Coffee",
+    "pagina_titulo_catalogo": "List | Mr. Coffee",
+    "pagina_titulo_experiencias": "Experiences | Mr. Coffee",
+    "pagina_titulo_contacto": "Contact | Mr. Coffee",
+    "pagina_titulo_ubicacion": "Location | Mr. Coffee",
+    
+    "inicio": "Home",
+    "historia": "History",
+    "catalogo": "Catalog",
+    "experiencias": "Experiences",
+    "contacto": "Contact",
+    "ubicacion": "Location",
+
+    "titulo": "SPECIALTY COFFEE",
+    "subtitulo": "Premium experience & Artisan style",
+    "boton": "Explore",
+
+    "cafe_expresso": "Espresso Coffee",
+    "como_en_casa": "Feel at home",
+    "seleccion_primera": "Premium selection",
+    "olor_cafe": "The aroma of good coffee",
+    "delicia_textura": "Delight and texture",
+    "originalidad": "Originality in every drop",
+
+    "quienes_somos": "Who are we?",
+    "mision": "Mission",
+    "vision": "Vision",
+  
+    "titulo_historia": "OUR HISTORY",
+    "subtitulo_historia": "The origin of our essence",
+
+    "menu_exclusivo": "EXCLUSIVE MENU",
+
+    "momentos_disfrutan": "Moments to enjoy",
+    "titulo_experiencias": "EXPERIENCES",
+    "experiencia_texto": "Each cup of coffee holds stories, effort, and passion. Discover the journey that makes your best moment possible.",
+    "seleccionamos_mejor": "We Select the Best",
+    "tostamos_pasion": "We Roast with Passion",
+    "preparamos_experiencia": "We Prepare Your Experience",
+    "creamos_momentos": "We Create Great Moments",
+    "vive_cafe": "LIVE THE COFFEE",
+    "del_origen_taza": "From Origin to Your Cup",
+    "conoce_mas": "Learn More",
+
+    "consultas": "INQUIRIES",
+    "estamos_para_ayudarte": "We Are Here to Help You",
+    "texto_consultas": "Our team is available to answer your questions, provide recommendations, and assist you with our coffees and experiences.",
+    "productos_premium": "Premium Products",
+    "horarios": "Opening Hours",
+    "telefono": "Phone",
+    "texto_telefono": "Call us at 970 574 136 for quick inquiries and reservations. We are here to provide you with the best coffee experience.",
+    "consultar_whatsapp": "Contact via WhatsApp",
+
+    "ubicacion_titulo": "LOCATION",
+    "encuentranos": "Find Us",
+    "ubicacion_descripcion": "Live the Mr. Coffee experience in an elegant, cozy atmosphere designed to enjoy every cup.",
+    "nuestra_sede": "Our Location",
+    "horario_atencion": "Opening Hours",
+    "dias_horario": "Monday to Sunday 8:00 AM - 9:30 PM",
+    "direccion": "720 Los Pioneros Avenue, La Merced 12856, Peru",
+
+    "marca": "Mr. coffee",
+    "descripcion": "A first-class experience, artisan culture, and a unique atmosphere.",
+    "enlaces_rapidos": "Quick Links",
+    "siguenos": "Follow us",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "copyright": "© 2026 Mr. Coffee. All rights reserved."
+}

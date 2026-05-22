@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title data-key="pagina_titulo_catalogo">Catálogo | Mr. Coffee</title>
+
+    <link rel="icon" href="img_videos/logo Mr.coffee.png" type="image/png" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Bad+Script&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="css/catalogo.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <div class="container-fluid">
+
+            <a class="navbar-brand d-flex align-items-center" href="historia.html">
+
+                <img src="img_videos/logo Mr.coffee.png" alt="Logo Mr. Coffee" class="brand-logo">
+
+                <span>Mr.coffee</span>
+
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html" data-key="inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="historia.html" data-key="historia">Historia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalogo.html" data-key="catalogo">Catálogo</a></li>
+                </ul>
+
+                <div class="nav-flag mx-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Peru.svg" alt="Perú">
+                </div>
+
+                <ul class="navbar-nav me-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="experiencias.html"
+                            data-key="experiencias">Experiencias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html" data-key="contacto">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ubicacion.html" data-key="ubicacion">Ubicación</a>
+                    </li>
+                </ul>
+
+                <div class="owner-signature">
+                    Junior
+                    <span style="padding-left: 65px; display: inline-block; transform: scaleX(1.45) scaleY(0.7);">
+                        Cardenas
+                    </span>
+
+                    <span
+                        style="padding-top: 10px; color: rgb(181, 180, 178); display: inline-block; transform: scaleX(1.6) scaleY(0.5)">
+                        Il Caffettiere
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <section class="history-hero"></section>
+
+    <section class="catalog-section">
+
+        <div class="catalog-overlay"></div>
+
+        <div class="container catalog-container">
+
+            <div class="catalog-header">
+
+                <span class="catalog-mini" data-key="menu_exclusivo">MENÚ EXCLUSIVO</span>
+
+                <p>
+                    Descubre bebidas artesanales preparadas con pasión,
+                    aroma intenso y una experiencia premium en cada taza.
+                </p>
+
+            </div>
+
+            <div class="catalog-controls">
+
+                <div class="search-box">
+                    <i class="bi bi-search"></i>
+
+                    <input type="text" id="searchInput" placeholder="Buscar...">
+                </div>
+
+                <div class="filter-buttons">
+
+                    <button class="filter-btn active" data-filter="all">
+                        Todos
+                    </button>
+
+                    <button class="filter-btn" data-filter="caliente">
+                        Calientes
+                    </button>
+
+                    <button class="filter-btn" data-filter="frio">
+                        Fríos
+                    </button>
+
+                    <button class="filter-btn" data-filter="premium">
+                        Premium
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="catalog-grid">
+
+                <!-- ITEM -->
+
+                <div class="catalog-card" data-category="caliente">
+
+                    <div class="coffee-circle">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqtzZUueymRdZEOi-ilL8rNSrnztdapGIAcQ8yv8K7-oL8giAjRb6B9EKLzauEBYNNoz506RPrxhP9cTSPGFRo4NpOCj37pgtGMFklOmE&s=10"
+                            alt="Espreso_italiano">
+                    </div>
+
+                    <div class="coffee-info">
+
+                        <div class="coffee-top">
+                            <h3>Espresso Italiano</h3>
+                            <span>S/ 8.00</span>
+                        </div>
+
+                        <p>
+                            Café intenso con aroma profundo y crema perfecta.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- ITEM -->
+
+                <div class="catalog-card" data-category="frio">
+
+                    <div class="coffee-circle">
+                        <img src="data:image/jpeg;base64,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"
+                            alt="Caramel Latte">
+                    </div>
+
+                    <div class="coffee-info">
+
+                        <div class="coffee-top">
+                            <h3>Caramel Latte</h3>
+                            <span>S/ 12.50</span>
+                        </div>
+
+                        <p>
+                            Latte cremoso con caramelo suave y espuma artesanal.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- ITEM -->
+
+                <div class="catalog-card" data-category="caliente premium">
+
+                    <div class="coffee-circle">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUUL0KE3TZz3aL_cA54uggKA8EXp1JZEncBA&s"
+                            alt="Cappuccino Gold">
+                    </div>
+
+                    <div class="coffee-info">
+
+                        <div class="coffee-top">
+                            <h3>Cappuccino Gold</h3>
+                            <span>S/ 10.90</span>
+                        </div>
+
+                        <p>
+                            Balance perfecto entre espresso, leche y espuma.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- ITEM -->
+
+                <div class="catalog-card" data-category="caliente premium">
+
+                    <div class="coffee-circle">
+                        <img src="https://milk.co.uk/wp-content/uploads/2022/02/Optimised-300x300.jpg"
+                            alt="Mocha_Deluxe">
+                    </div>
+
+                    <div class="coffee-info">
+
+                        <div class="coffee-top">
+                            <h3>Mocha Deluxe</h3>
+                            <span>S/ 13.00</span>
+                        </div>
+
+                        <p>
+                            Chocolate premium mezclado con espresso intenso.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- ITEM -->
+
+                <div class="catalog-card" data-category="frio">
+
+                    <div class="coffee-circle">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl5XcVpIK2ukp9NMPsWW5-NIncHgEtwAC6zg&s"
+                            alt="Iced Coffee">
+                    </div>
+
+                    <div class="coffee-info">
+
+                        <div class="coffee-top">
+                            <h3>Iced Coffee</h3>
+                            <span>S/ 11.50</span>
+                        </div>
+
+                        <p>
+                            Café frío refrescante con notas dulces y cremosas.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- ITEM -->
+
+                <div class="catalog-card" data-category="frio premium">
+
+                    <div class="coffee-circle">
+                        <img src="https://starbucks-bqexpresss.myshopify.com/cdn/shop/products/vainilla_cream-01_large.jpg?v=1418229825"
+                            alt="Vanilla Cream">
+                    </div>
+
+                    <div class="coffee-info">
+
+                        <div class="coffee-top">
+                            <h3>Vanilla Cream</h3>
+                            <span>S/ 12.00</span>
+                        </div>
+
+                        <p>
+                            Delicada combinación de vainilla y café artesanal.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer-section">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-4 mb-4">
+
+                    <h3 class="footer-logo">Mr. coffee</h3>
+
+                    <p class="footer-text" data-key="descripcion">
+                        Una experiencia de primera calidad, cultura artesanal y un ambiente único.
+                    </p>
+
+                    <div class="lang-buttons mt-3">
+
+                        <button onclick="changeLanguage('es')" class="lang-btn">
+                            <img src="https://flagcdn.com/w40/es.png" alt="ES">
+                        </button>
+
+                        <button onclick="changeLanguage('en')" class="lang-btn">
+                            <img src="https://flagcdn.com/w40/us.png" alt="EN">
+                        </button>
+
+                        <button onclick="changeLanguage('de')" class="lang-btn">
+                            <img src="https://flagcdn.com/w40/de.png" alt="DE">
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5 class="footer-title" data-key="enlaces_rapidos">Enlaces Rápidos</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html" data-key="inicio">Inicio</a></li>
+                        <li><a href="historia.html" data-key="historia">Historia</a></li>
+                        <li><a href="catalogo.html" data-key="catalogo">Catálogo</a></li>
+                        <li><a href="experiencias.html" data-key="experiencias">Experiencias</a></li>
+                        <li><a href="contacto.html" data-key="contacto">Contacto</a></li>
+                        <li><a href="ubicacion.html" data-key="ubicacion">Ubicación</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5 class="footer-title" data-key="siguenos">Síguenos</h5>
+                    <div class="social-icons">
+                        <a
+                            href="https://www.instagram.com/mistercoffeeoficial?igsh=MWE0NmJlZXFnNjd6dA%3D%3D&utm_source=qr"><i
+                                class="bi bi-instagram"></i> <span data-key="instagram">Instagram</span></a>
+                        <a href="https://www.facebook.com/share/1EHn61oxgY/?mibextid=wwXIfr"><i
+                                class="bi bi-facebook"></i> <span data-key="facebook">Facebook</span></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="footer-line">
+
+            <div class="text-center footer-bottom">
+                <p data-key="copyright">© 2026 Mr. Coffee. Todos los derechos reservados.</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <div class="whatsapp-carrusel" style="margin-bottom: -35px; position: fixed;
+            bottom: 60px;
+            right: 20px;
+            z-index: 9999;">
+        <div class="whatsapp-track " style="text-align: center;">
+            <a href="https://wa.me/51970574136" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+            </a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+    const searchInput = document.getElementById("searchInput");
+
+    const filterButtons = document.querySelectorAll(".filter-btn");
+
+    const cards = document.querySelectorAll(".catalog-card");
+
+    let currentFilter = "all";
+
+    /* BUSCADOR */
+
+    searchInput.addEventListener("input", filterProducts);
+
+    /* FILTROS */
+
+    filterButtons.forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            filterButtons.forEach(btn =>
+                btn.classList.remove("active")
+            );
+
+            button.classList.add("active");
+
+            currentFilter = button.dataset.filter;
+
+            filterProducts();
+        });
+    });
+
+    /* FUNCIÓN */
+
+    function filterProducts() {
+
+        const searchText =
+            searchInput.value.toLowerCase();
+
+        cards.forEach(card => {
+
+            const title =
+                card.querySelector("h3")
+                    .textContent
+                    .toLowerCase();
+
+            const category =
+                card.dataset.category;
+
+            const matchesSearch =
+                title.includes(searchText);
+
+            const matchesFilter =
+                currentFilter === "all" ||
+                category.includes(currentFilter);
+
+            if (matchesSearch && matchesFilter) {
+
+                card.style.display = "flex";
+
+            } else {
+
+                card.style.display = "none";
+            }
+        });
+    }
+
+</script>
+
+</body>
+
+<script src="js/script.js"></script>
+
+</html>

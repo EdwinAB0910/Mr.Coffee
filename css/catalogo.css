@@ -1,0 +1,1035 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+
+    background:
+        linear-gradient(135deg,
+            #120d09,
+            #2c1b12,
+            #4b2d1a);
+
+    color: white;
+
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+
+.navbar {
+    padding: 40px 35px;
+
+    background: transparent !important;
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+}
+
+.navbar-brand {
+    color: white !important;
+
+    font-size: 1.3rem;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+.brand-logo {
+
+    width: 80px;
+    height: 80px;
+
+    object-fit: contain;
+
+    margin-right: 12px;
+
+    border-radius: 50%;
+
+    position: relative;
+
+    animation: megaGlow 2.5s ease-in-out infinite alternate;
+
+    filter:
+        drop-shadow(0 0 10px rgba(255, 255, 255, .6)) drop-shadow(0 0 25px rgba(255, 255, 255, .45)) drop-shadow(0 0 45px rgba(255, 255, 255, .30));
+
+    transition: .4s ease;
+}
+
+@keyframes megaGlow {
+
+    0% {
+        filter:
+            drop-shadow(0 0 8px rgba(255, 255, 255, .4)) drop-shadow(0 0 20px rgba(255, 255, 255, .25)) drop-shadow(0 0 35px rgba(255, 255, 255, .18));
+    }
+
+    100% {
+        filter:
+            drop-shadow(0 0 18px rgba(255, 255, 255, .95)) drop-shadow(0 0 45px rgba(255, 255, 255, .7)) drop-shadow(0 0 80px rgba(255, 255, 255, .5));
+    }
+}
+
+.brand-logo:hover {
+
+    transform: scale(1.12);
+
+    filter:
+        drop-shadow(0 0 15px rgba(255, 255, 255, .9)) drop-shadow(0 0 35px rgba(255, 255, 255, .7)) drop-shadow(0 0 60px rgba(255, 255, 255, .5)) brightness(1.15);
+}
+
+.nav-link {
+
+    color: white !important;
+
+    margin-left: 18px;
+
+    font-size: 0.65rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    position: relative;
+
+    display: inline-block;
+
+    padding-bottom: 8px;
+}
+
+.nav-link::after {
+
+    content: "";
+
+    position: absolute;
+
+    bottom: 0;
+    left: 50%;
+
+    width: 0;
+
+    height: 1px;
+
+    background: white;
+
+    transform: translateX(-50%);
+
+    transition: 0.35s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-flag {
+
+    padding-left: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: .4s ease;
+}
+
+.nav-flag img {
+
+    width: 42px;
+
+    height: 28px;
+
+    object-fit: cover;
+
+    border-radius: 6px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .25);
+
+    transition: .4s ease;
+}
+
+.nav-flag:hover img {
+
+    transform: scale(1.15) translateY(-3px);
+
+    box-shadow: 0 10px 25px rgba(255, 255, 255, .15);
+}
+
+.owner-signature {
+
+    font-family: 'Bad Script', cursive;
+
+    font-size: 1.8rem;
+
+    margin-left: 30px;
+
+    line-height: .5;
+
+    align-items: center;
+
+    font-weight: 100;
+
+    display: flex;
+
+    flex-direction: column;
+
+    cursor: pointer;
+
+    text-shadow: 0 0 10px rgba(255, 255, 255, .08);
+
+    transform: rotate(-2deg);
+}
+
+.owner-signature:hover {
+
+    transform: scale(1.05) rotate(-4deg);
+
+    color: #f5f5f5;
+
+    text-shadow: 0 0 18px rgba(255, 255, 255, .18);
+}
+
+.history-hero {
+
+    height: 30vh;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, .55),
+            rgba(0, 0, 0, .55)),
+        url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&q=80');
+
+    background-size: cover;
+
+    background-position: center;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+.catalog-section {
+
+    padding: 100px 0 120px;
+
+    position: relative;
+}
+
+.search-box {
+
+    flex: 1;
+
+    min-width: 280px;
+
+    position: relative;
+}
+
+.search-box i {
+
+    position: absolute;
+
+    top: 50%;
+    left: 18px;
+
+    transform: translateY(-50%);
+
+    color: #c9c9c9;
+
+    font-size: 1rem;
+}
+
+.search-box input {
+
+    width: 100%;
+
+    padding: 16px 20px 16px 50px;
+
+    border: none;
+
+    outline: none;
+
+    border-radius: 18px;
+
+    background:
+        rgba(255, 255, 255, .08);
+
+    color: white;
+
+    font-size: .95rem;
+
+    backdrop-filter: blur(8px);
+
+    border: 1px solid rgba(255, 255, 255, .08);
+
+    transition: .35s ease;
+}
+
+.search-box input::placeholder {
+
+    color: #bdbdbd;
+}
+
+.search-box input:focus {
+
+    border-color: #f3c78d;
+
+    box-shadow:
+        0 0 15px rgba(243, 199, 141, .15);
+}
+
+.filter-buttons {
+
+    display: flex;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+    padding-top: 15px;
+}
+
+.filter-btn {
+
+    padding: 12px 20px;
+
+    border-radius: 14px;
+
+    border: 1px solid rgba(255, 255, 255, .08);
+
+    background:
+        rgba(255, 255, 255, .06);
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: .35s ease;
+
+    font-size: .9rem;
+
+    font-weight: 600;
+}
+
+.filter-btn:hover {
+
+    transform: translateY(-3px);
+
+    background:
+        rgba(255, 255, 255, .12);
+}
+
+.filter-btn.active {
+
+    background:
+        linear-gradient(135deg,
+            #f3c78d,
+            #d6a46b);
+
+    color: #3d2b1f;
+
+    border-color: transparent;
+}
+
+.catalog-mini {
+
+    font-size: 2.5rem;
+
+    padding: 12px 25px;
+
+    background: linear-gradient(135deg, #f3c78d, #d6a46b);
+
+    border-radius: 12px;
+
+    color: #514d48;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.catalog-header {
+
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.catalog-header p {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    padding-top: 30px;
+
+    color: #d0d0d0;
+
+    line-height: 2;
+
+    font-size: 1.05rem;
+}
+
+.catalog-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 35px;
+
+    margin-bottom: -40px;
+
+    margin-top: 40px;
+}
+
+.catalog-card {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 35px;
+
+    border-radius: 30px;
+
+    background:
+        linear-gradient(135deg,
+            rgba(111, 78, 55, .96),
+            rgba(44, 28, 22, .96));
+
+    border: 1px solid rgba(255, 255, 255, .08);
+
+    transition: .45s ease;
+
+    position: relative;
+
+    overflow: hidden;
+
+    backdrop-filter: blur(8px);
+}
+
+.catalog-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        radial-gradient(circle at top left,
+            rgba(255, 255, 255, .10),
+            transparent 35%);
+
+    opacity: 0;
+
+    transition: .4s ease;
+}
+
+.catalog-card:hover::before {
+
+    opacity: 1;
+}
+
+.catalog-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, .45);
+}
+
+.coffee-circle {
+
+    min-width: 110px;
+
+    width: 110px;
+
+    height: 110px;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, .30);
+
+    border: 3px solid rgba(255, 255, 255, .08);
+
+    flex-shrink: 0;
+}
+
+.coffee-circle img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .4s ease;
+}
+
+.catalog-card:hover .coffee-circle img {
+
+    transform: scale(1.08);
+}
+
+.coffee-info {
+
+    width: 100%;
+}
+
+.coffee-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 14px;
+
+    gap: 15px;
+}
+
+.coffee-top h3 {
+
+    font-size: 1.5rem;
+
+    margin: 0;
+
+    font-weight: 600;
+
+    color: #fff;
+}
+
+.coffee-top span {
+
+    color: #f3c78d;
+
+    font-weight: 700;
+
+    font-size: 1.1rem;
+
+    white-space: nowrap;
+}
+
+.coffee-info p {
+
+    color: #d7d7d7;
+
+    line-height: 1.8;
+
+    margin: 0;
+
+    font-size: .97rem;
+}
+
+.footer-section {
+    background: #0b0b0b;
+    padding: 80px 0 30px;
+    color: white;
+}
+
+.footer-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.footer-text {
+    color: #9d9d9d;
+    line-height: 1.8;
+    max-width: 300px;
+}
+
+.footer-title {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.lang-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.lang-btn {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 4px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.lang-btn img {
+    width: 28px;
+    height: 20px;
+    display: block;
+    border-radius: 3px;
+}
+
+.lang-btn:hover {
+    transform: scale(1.1);
+    border-color: white;
+}
+
+/* idioma activo */
+.lang-btn.active {
+    border-color: white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.fade-effect {
+    animation: fadeLang 0.35s ease;
+}
+
+@keyframes fadeLang {
+    from {
+        opacity: 0;
+        transform: translateY(4px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* LINKS */
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #9d9d9d;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+    padding-left: 5px;
+}
+
+/* REDES SOCIALES */
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #9d9d9d;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.social-icons a i {
+    font-size: 1.2rem;
+}
+
+.social-icons a:hover {
+    color: white;
+    transform: translateX(5px);
+}
+
+/* LINEA */
+.footer-line {
+    border-color: rgba(255, 255, 255, .1);
+    margin: 35px 0 25px;
+}
+
+/* COPYRIGHT */
+.footer-bottom p {
+    color: #777;
+    font-size: .9rem;
+    margin: 0;
+}
+
+.whatsapp-carrusel a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: #8ed9ac;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.whatsapp-carrusel img {
+    width: 30px;
+    height: 30px;
+}
+
+.whatsapp-carrusel a:hover {
+    transform: scale(1.1);
+}
+
+/* Responsivo */
+
+/* TABLET */
+
+@media (max-width: 992px) {
+
+    .navbar {
+
+        padding: 20px;
+
+    }
+
+    .navbar-collapse {
+
+        background:
+            linear-gradient(rgba(0, 0, 0, .94),
+                rgba(0, 0, 0, .94));
+
+        backdrop-filter: blur(10px);
+
+        border-radius: 25px;
+
+        padding: 35px 25px;
+
+        margin-top: 20px;
+
+        text-align: center;
+    }
+
+    .navbar-nav {
+
+        gap: 8px;
+    }
+
+    .nav-link {
+
+        margin-left: 0;
+
+        padding: 12px 0;
+
+        font-size: .78rem;
+    }
+
+    .nav-flag {
+
+        width: 100%;
+
+        justify-content: center;
+
+        margin: 20px 0;
+
+        padding-left: 0;
+    }
+
+    .owner-signature {
+
+        margin: 20px auto 0;
+
+        text-align: center;
+
+        font-size: 1.6rem;
+    }
+
+    .history-hero {
+
+        height: 35vh;
+    }
+
+    .catalog-section {
+
+        padding: 90px 20px 100px;
+    }
+
+    .catalog-mini {
+
+        font-size: 1.9rem;
+
+        padding: 10px 20px;
+    }
+
+    .catalog-header p {
+
+        font-size: 1rem;
+
+        line-height: 1.9;
+    }
+
+    .catalog-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 28px;
+    }
+
+    .catalog-card {
+
+        padding: 28px;
+    }
+
+    .coffee-circle {
+
+        width: 95px;
+
+        height: 95px;
+
+        min-width: 95px;
+    }
+
+    .coffee-top h3 {
+
+        font-size: 1.3rem;
+    }
+
+    .coffee-top span {
+
+        font-size: 1rem;
+    }
+
+    .footer-section {
+
+        text-align: center;
+    }
+
+    .footer-section .row {
+
+        justify-content: center;
+    }
+
+    .footer-text {
+
+        margin: auto;
+    }
+
+    .lang-buttons {
+
+        justify-content: center;
+    }
+
+    .social-icons {
+
+        align-items: center;
+    }
+}
+
+/*  CELULAR */
+
+@media (max-width: 768px) {
+
+    .navbar {
+
+        padding: 15px;
+    }
+
+    .navbar-collapse {
+
+        padding: 28px 20px;
+
+        border-radius: 20px;
+    }
+
+    .brand-logo {
+
+        width: 65px;
+
+        height: 65px;
+    }
+
+    .nav-flag {
+
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        margin: 18px 0;
+
+        padding-right: 50px
+    }
+
+    .nav-flag img {
+
+        width: 42px;
+
+        height: 28px;
+
+    }
+
+    .navbar-brand {
+
+        font-size: 1rem;
+
+        letter-spacing: 2px;
+    }
+
+    .owner-signature {
+
+        font-size: 1.3rem;
+
+        line-height: .7;
+    }
+
+    .history-hero {
+
+        height: 28vh;
+    }
+
+    .catalog-section {
+
+        padding: 70px 15px 90px;
+    }
+
+    .catalog-mini {
+
+        font-size: 1.3rem;
+
+        padding: 10px 18px;
+
+        letter-spacing: 1px;
+    }
+
+    .catalog-header {
+
+        margin-bottom: 35px;
+    }
+
+    .catalog-header p {
+
+        padding-top: 20px;
+
+        font-size: .95rem;
+
+        line-height: 1.8;
+    }
+
+    .catalog-grid {
+
+        gap: 22px;
+    }
+
+    .catalog-card {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 30px 22px;
+
+        gap: 22px;
+
+        border-radius: 25px;
+    }
+
+    .catalog-controls {
+
+        display: flex;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+        gap: 25px;
+
+        margin-bottom: 45px;
+
+        flex-wrap: wrap;
+    }
+
+    .coffee-circle {
+
+        width: 100px;
+
+        height: 100px;
+
+        min-width: 100px;
+    }
+
+    .coffee-top {
+
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+    .coffee-top h3 {
+
+        font-size: 1.2rem;
+    }
+
+    .coffee-top span {
+
+        font-size: 1rem;
+    }
+
+    .coffee-info p {
+
+        font-size: .92rem;
+
+        line-height: 1.7;
+    }
+
+    .footer-section {
+
+        padding: 65px 20px 25px;
+    }
+
+    .footer-logo {
+
+        font-size: 1.3rem;
+    }
+
+    .footer-title {
+
+        margin-top: 15px;
+    }
+
+    .social-icons a {
+
+        justify-content: center;
+    }
+
+    .whatsapp-carrusel a {
+
+        width: 55px;
+
+        height: 55px;
+    }
+
+    .whatsapp-carrusel img {
+
+        width: 27px;
+
+        height: 27px;
+    }
+}
