@@ -16,20 +16,24 @@
     "titulo": "CAFÉ DE ESPECIALIDAD",
     "subtitulo": "Experiencia premium & Estilo artesanal",
     "boton": "Explorar",
-
     "cafe_expresso": "Café Expreso",
     "como_en_casa": "Como en casa",
     "seleccion_primera": "Selección de primera",
     "olor_cafe": "El olor de un buen café",
     "delicia_textura": "Delicia y textura",
     "originalidad": "Originalidad en cada gota",
-
     "quienes_somos": "¿Quiénes somos?",
+    "quienes_somos_texto": "Somos una cafetería dedicada a brindar experiencias únicas, combinando café de especialidad, ambiente premium y pasión artesanal.",
     "mision": "Misión",
+    "mision_texto": "Ofrecer productos de alta calidad y crear momentos memorables para cada cliente en un espacio acogedor y moderno.",
     "vision": "Visión",
+    "vision_texto": "Convertirnos en una referencia de cafetería premium, reconocida por nuestra innovación, estilo y excelencia.",
 
     "titulo_historia": "NUESTRA HISTORIA",
     "subtitulo_historia": "El origen de nuestra esencia",
+    "parrafo_historia_1": "Nuestra historia en Mr. Coffee nace de la profunda pasión por el café artesanal y del deseo de rendir un homenaje sincero a nuestras raíces en las tierras altas de Alto Yapaz. Es allí, entre la mística neblina, el clima perfecto y la rica biodiversidad de sus montañas, donde cultivamos nuestros granos con dedicación y respeto por la naturaleza, asegurando que cada taza que servimos sea un reflejo auténtico de esta tierra excepcional.",
+    "parrafo_historia_2": "Buscamos combinar el alma indomable de la caficultura local con un diseño elegante y vanguardista, logrando que la riqueza de esta tierra se sienta en un ambiente verdaderamente único. En Mr. Coffee, cada detalle está pensado para que nuestros clientes no solo disfruten de un café de calidad superior, sino que también vivan una experiencia que conecte con la esencia de nuestra historia y cultura cafetera.",
+    "parrafo_historia_3": "El resultado final se traduce en una taza perfecta donde el aroma evoca la frescura cruda de nuestras montañas, el sabor rinde culto a la historia de su producción y el ambiente cálido invita a compartir momentos inolvidables. En Mr. Coffee, cada sorbo es un viaje a las raíces de nuestro café, una celebración de la pasión y el esfuerzo que hay detrás de cada grano, y una invitación a disfrutar de la vida con cada taza.",
 
     "menu_exclusivo": "MENÚ EXCLUSIVO",
 
@@ -37,11 +41,16 @@
     "titulo_experiencias": "EXPERIENCIAS",
     "experiencia_texto": "Cada taza de café guarda historias, esfuerzo y pasión. Descubre el viaje que hace posible tu mejor momento.",
     "seleccionamos_mejor": "Seleccionamos lo mejor",
+    "seleccionamos_mejor_texto": "Elegimos granos de la más alta calidad de tierras que brindan excelencia.",
     "tostamos_pasion": "Tostamos con pasión",
+    "tostamos_pasion_texto": "Realzamos los aromas y sabores únicos de cada grano con un tostado artesanal.",
     "preparamos_experiencia": "Preparamos tu experiencia",
+    "preparamos_experiencia_texto": "Cada preparación es un arte hecho con dedicación para ofrecerte lo mejor.",
     "creamos_momentos": "Creamos buenos momentos",
+    "creamos_momentos_texto": "Más que café, creamos recuerdos y momentos que se quedan contigo.",
     "vive_cafe": "VIVE EL CAFÉ",
     "del_origen_taza": "Del origen a tu taza",
+    "del_origen_texto": "Recorremos cada etapa del proceso para asegurarnos de que disfrutes una experiencia auténtica y llena de sabor.",
     "conoce_mas": "Conoce más",
 
     "consultas": "CONSULTAS",
@@ -51,7 +60,10 @@
     "horarios": "Horarios",
     "telefono": "Teléfono",
     "texto_telefono": "Llámanos al 970 574 136 para consultas rápidas y reservas. Estamos aquí para brindarte la mejor experiencia cafetera.",    
+    "texto_horarios": "Atendemos de 10:00 a.m. a 10:00 p.m. Consulta sobre la disponibilidad de experiencias.",
+    "texto_productos_premium": "Descubre nuestros cafés artesanales, métodos especiales y ediciones exclusivas.",
     "consultar_whatsapp": "Consultar por WhatsApp",
+    
 
     "ubicacion_titulo": "UBICACIÓN",
     "encuentranos": "Encuéntranos",
@@ -60,6 +72,8 @@
     "horario_atencion": "Horario de atención",
     "dias_horario": "Lunes a Domingo 8:00 AM - 9:30 PM",
     "direccion": "Av. Los Pioneros 720, La Merced 12856, Perú",
+    "referencia": "Referencia",
+    "lugar":"A tres cuadras del parque Bolognesi",
 
     "descripcion": "Una experiencia de primera calidad, cultura artesanal y un ambiente único.",
     "enlaces_rapidos": "Enlaces Rápidos",

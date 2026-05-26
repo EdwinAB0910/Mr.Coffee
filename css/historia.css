@@ -326,7 +326,7 @@ body {
 
 .history-image img {
     width: 100%;
-    max-width: 350px;
+    max-width: 540px;
     height: 450px;
     object-fit: cover;
     border-radius: 25px;

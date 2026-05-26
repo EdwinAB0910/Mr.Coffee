@@ -16,20 +16,24 @@
     "titulo": "SPECIALTY COFFEE",
     "subtitulo": "Premium experience & Artisan style",
     "boton": "Explore",
-
     "cafe_expresso": "Espresso Coffee",
     "como_en_casa": "Feel at home",
     "seleccion_primera": "Premium selection",
     "olor_cafe": "The aroma of good coffee",
     "delicia_textura": "Delight and texture",
     "originalidad": "Originality in every drop",
-
     "quienes_somos": "Who are we?",
+    "quienes_somos_texto": "We are a coffee shop dedicated to providing unique experiences, combining specialty coffee, premium ambiance, and artisan passion.",
     "mision": "Mission",
+    "mision_texto": "To offer high-quality products and create memorable moments for every customer in a cozy and modern space.",
     "vision": "Vision",
+    "vision_texto": "To become a reference for premium coffee shops, recognized for our innovation, style, and excellence.",
   
     "titulo_historia": "OUR HISTORY",
     "subtitulo_historia": "The origin of our essence",
+    "parrafo_historia_1": "Our story at Mr. Coffee is born from a deep passion for artisanal coffee and the desire to pay a sincere tribute to our roots in the highlands of Alto Yapaz. It is there, among the mystical mist, the perfect climate, and the rich biodiversity of its mountains, where we cultivate our beans with dedication and respect for nature, ensuring that every cup we serve is an authentic reflection of this exceptional land.",
+    "parrafo_historia_2": "We seek to combine the indomitable soul of local coffee cultivation with an elegant and avant-garde design, making the richness of this land feel in a truly unique environment. At Mr. Coffee, every detail is designed so that our customers not only enjoy a superior quality coffee but also live an experience that connects with the essence of our history and coffee culture.",
+    "parrafo_historia_3": "The end result translates into a perfect cup where the aroma evokes the raw freshness of our mountains, the flavor pays homage to the history of its production, and the warm atmosphere invites you to share unforgettable moments. At Mr. Coffee, every sip is a journey to the roots of our coffee, a celebration of the passion and effort behind every bean, and an invitation to enjoy life with every cup.",
 
     "menu_exclusivo": "EXCLUSIVE MENU",
 
@@ -37,11 +41,16 @@
     "titulo_experiencias": "EXPERIENCES",
     "experiencia_texto": "Each cup of coffee holds stories, effort, and passion. Discover the journey that makes your best moment possible.",
     "seleccionamos_mejor": "We Select the Best",
+    "seleccionamos_mejor_texto": "We choose the highest quality beans from lands that provide excellence.",
     "tostamos_pasion": "We Roast with Passion",
+    "tostamos_pasion_texto": "We enhance the unique aromas and flavors of each bean with artisanal roasting.",
     "preparamos_experiencia": "We Prepare Your Experience",
+    "preparamos_experiencia_texto": "Each preparation is an art made with dedication to offer you the best.",
     "creamos_momentos": "We Create Great Moments",
+    "creamos_momentos_texto": "More than coffee, we create memories and moments that stay with you.",
     "vive_cafe": "LIVE THE COFFEE",
     "del_origen_taza": "From Origin to Your Cup",
+    "del_origen_texto": "We traverse each stage of the process to ensure you enjoy an authentic experience full of flavor.",
     "conoce_mas": "Learn More",
 
     "consultas": "INQUIRIES",
@@ -51,6 +60,8 @@
     "horarios": "Opening Hours",
     "telefono": "Phone",
     "texto_telefono": "Call us at 970 574 136 for quick inquiries and reservations. We are here to provide you with the best coffee experience.",
+    "texto_horarios": "We are open from 10:00 AM to 10:00 PM. Check the availability of our experiences.",
+    "texto_productos_premium": "Discover our artisanal coffees, special methods, and exclusive editions.",
     "consultar_whatsapp": "Contact via WhatsApp",
 
     "ubicacion_titulo": "LOCATION",
@@ -60,6 +71,8 @@
     "horario_atencion": "Opening Hours",
     "dias_horario": "Monday to Sunday 8:00 AM - 9:30 PM",
     "direccion": "720 Los Pioneros Avenue, La Merced 12856, Peru",
+    "referencia": "Reference",
+    "lugar":"Three blocks from Bolognesi Park",
 
     "marca": "Mr. coffee",
     "descripcion": "A first-class experience, artisan culture, and a unique atmosphere.",

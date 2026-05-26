@@ -16,20 +16,24 @@
     "titulo": "SPEZIALITÄTENKAFFEE",
     "subtitulo": "Premium-Erlebnis & Handwerksstil",
     "boton": "Entdecken",
-
     "cafe_expresso": "Espresso Kaffee",
     "como_en_casa": "Wie zu Hause",
     "seleccion_primera": "Erstklassige Auswahl",
     "olor_cafe": "Der Duft eines guten Kaffees",
     "delicia_textura": "Genuss und Textur",
     "originalidad": "Originalität in jedem Tropfen",
-
     "quienes_somos": "Wer sind wir?",
+    "quienes_somos_texto": "Wir sind eine Kaffeebar, die sich der Bereitstellung einzigartiger Erlebnisse verschrieben hat, indem sie Spezialitätskaffee, Premium-Ambiente und Handwerksleidenschaft kombiniert.",
     "mision": "Mission",
+    "mision_texto": "Wir bieten hochwertige Produkte an und schaffen unvergessliche Momente für jeden Kunden in einem gemütlichen und modernen Raum.",
     "vision": "Vision",
+    "vision_texto": "Wir wollen zu einer Referenz für Premium-Kaffee-Shops werden, die durch unsere Innovation, unser Stil und unsere Exzellenz bekannt sind.",
 
     "titulo_historia": "UNSERE GESCHICHTE",
     "subtitulo_historia": "Der Ursprung unserer Essenz",
+    "parrafo_historia_1": "Unsere Geschichte bei Mr. Coffee entsteht aus einer tiefen Leidenschaft für handwerklichen Kaffee und dem Wunsch, unseren Wurzeln in den Hochlanden von Alto Yapaz aufrichtig zu huldigen. Dort, zwischen mystischem Nebel, perfektem Klima und reicher Biodiversität seiner Berge, kultivieren wir unsere Bohnen mit Hingabe und Respekt vor der Natur, um sicherzustellen, dass jede Tasse, die wir servieren, eine authentische Reflexion dieses außergewöhnlichen Landes ist.",
+    "parrafo_historia_2": "Wir streben danach, die unbezähmbare Seele der lokalen Kaffeeproduktion mit einem eleganten und avantgardistischen Design zu verbinden, um die Fülle dieses Landes in einer wirklich einzigartigen Umgebung spüren zu lassen. Bei Mr. Coffee ist jedes Detail darauf ausgelegt, dass unsere Kunden nicht nur einen Kaffee von überlegener Qualität genießen, sondern auch ein Erlebnis erleben, das mit der Essenz unserer Geschichte und Kaffeekultur verbindet.",
+    "parrafo_historia_3": "Das Endergebnis übersetzt sich in eine perfekte Tasse, bei der das Aroma die rohe Frische unserer Berge hervorruft, der Geschmack die Geschichte seiner Produktion ehrt und die warme Atmosphäre dazu einlädt, unvergessliche Momente zu teilen. Bei Mr. Coffee ist jeder Schluck eine Reise zu den Wurzeln unseres Kaffees, eine Feier der Leidenschaft und Anstrengung hinter jeder Bohne und eine Einladung, das Leben mit jeder Tasse zu genießen.",
 
     "menu_exclusivo": "EXKLUSIVES MENÜ",
 
@@ -37,11 +41,16 @@
     "titulo_experiencias": "ERLEBNISSE",
     "experiencia_texto": "Jede Tasse Kaffee birgt Geschichten, Mühe und Leidenschaft. Entdecke die Reise, die es möglich macht, deinen besten Moment zu erleben.",
     "seleccionamos_mejor": "Wir wählen das Beste",
+    "seleccionamos_mejor_texto": "Wir wählen die hochwertigsten Bohnen aus Ländern, die Exzellenz bieten.",
     "tostamos_pasion": "Wir rösten mit Leidenschaft",
+    "tostamos_pasion_texto": "Wir verstärken die einzigartigen Aromen und Geschmacksrichtungen jeder Bohne mit handwerklichem Rösten.",
     "preparamos_experiencia": "Wir bereiten deine Erfahrung vor",
+    "preparamos_experiencia_texto": "Jede Zubereitung ist eine Kunst, die mit Hingabe gemacht wird, um dir das Beste zu bieten.",
     "creamos_momentos": "Wir schaffen großartige Momente",
-    "vive_cafe": "LIVE THE COFFEE",
+    "creamos_momentos_texto": "Mehr als Kaffee, wir schaffen Erinnerungen und Momente, die bei dir bleiben.",
+    "vive_cafe": "LEBE DEN KAFFEE",
     "del_origen_taza": "Vom Ursprung bis zu deiner Tasse",
+    "del_origen_texto": "Wir durchqueren jede Phase des Prozesses, um sicherzustellen, dass du ein authentisches Erlebnis voller Geschmack genießt.",
     "conoce_mas": "Erfahre mehr",
 
     "consultas": "ANFRAGEN",
@@ -51,7 +60,10 @@
     "horarios": "Öffnungszeiten",
     "telefono": "Telefon",
     "texto_telefono": "Rufe uns unter 970 574 136 an für schnelle Anfragen und Reservierungen. Wir sind hier, um dir das beste Kaffeeerlebnis zu bieten.",
+    "texto_horarios": "Wir sind von 10:00 Uhr bis 22:00 Uhr geöffnet. Prüfe die Verfügbarkeit unserer Erlebnisse.",
+    "texto_productos_premium": "Entdecke unsere handwerklichen Kaffees, spezielle Methoden und exklusiven Ausgaben.",
     "consultar_whatsapp": "Per WhatsApp anfragen",
+    
 
     "ubicacion_titulo": "STANDORT",
     "encuentranos": "Finden Sie uns",
@@ -60,6 +72,8 @@
     "horario_atencion": "Öffnungszeiten",
     "dias_horario": "Montag bis Sonntag 8:00 Uhr - 21:30 Uhr",
     "direccion": "Hauptstraße 245 - La Merced, Peru",
+    "referencia": "Referenz",
+    "lugar": "Drei Blocks vom Bolognesi-Park entfernt",
 
     "marca": "Mr. coffee",
     "descripcion": "Ein erstklassiges Erlebnis, handwerkliche Kultur und eine einzigartige Atmosphäre.",
