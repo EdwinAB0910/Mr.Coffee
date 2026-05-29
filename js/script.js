@@ -21,8 +21,16 @@ function applyTranslations() {
             // fuerza reflow
             void el.offsetWidth;
 
-            // cambia texto
-            el.textContent = translations[key];
+            // cambia placeholder si existe
+            if (el.hasAttribute("placeholder")) {
+
+                el.placeholder = translations[key];
+
+            } else {
+
+                // cambia texto normal
+                el.textContent = translations[key];
+            }
 
             // agrega animación
             el.classList.add("fade-effect");
@@ -46,7 +54,7 @@ reactionButtons.forEach(button => {
 
         const iconClass = button.dataset.icon;
 
-        for(let i = 0; i < 8; i++){
+        for (let i = 0; i < 8; i++) {
 
             const icon = document.createElement("i");
 

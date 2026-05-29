@@ -583,31 +583,56 @@ section h2 {
         padding: 15px;
     }
 
+    .navbar-collapse {
+
+        text-align: center;
+
+        background:
+            linear-gradient(rgba(0, 0, 0, .82),
+                rgba(0, 0, 0, .82));
+
+        backdrop-filter: blur(8px);
+
+        border-radius: 20px;
+
+    }
+
     .navbar-brand {
+
         font-size: 1rem;
+
         letter-spacing: 2px;
     }
 
     .nav-link {
+
         font-size: .65rem;
+
+        padding-bottom: 30px;
     }
 
     .nav-flag {
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-left: 120px;
-        padding-bottom: 20px;
-    }
 
-    .navbar-collapse {
-        text-align: center;
+        margin: 18px 0;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        padding-left: 138px;
+
+        padding-bottom: 10px;
     }
 
     .owner-signature {
+
         margin: 20px 0 0;
+
         font-size: 1.8rem;
+
         text-align: center;
     }
 

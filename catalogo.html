@@ -87,11 +87,11 @@
 
             <div class="catalog-header">
 
-                <span class="catalog-mini" data-key="menu_exclusivo">MENÚ EXCLUSIVO</span>
+                <span class="catalog-mini" data-key="productos_exclusivos">PRODUCTOS EXCLUSIVOS</span>
 
-                <p>
-                    Descubre bebidas artesanales preparadas con pasión,
-                    aroma intenso y una experiencia premium en cada taza.
+                <p data-key="catalogo_descripcion">
+                    Descubre productos artesanales elaborados con pasión,
+                    aroma intenso y una experiencia premium.
                 </p>
 
             </div>
@@ -101,25 +101,29 @@
                 <div class="search-box">
                     <i class="bi bi-search"></i>
 
-                    <input type="text" id="searchInput" placeholder="Buscar...">
+                    <input data-key="buscar" type="text" id="searchInput" placeholder="Buscar...">
                 </div>
 
                 <div class="filter-buttons">
 
-                    <button class="filter-btn active" data-filter="all">
+                    <button class="filter-btn active" data-filter="all" data-key="todos">
                         Todos
                     </button>
 
-                    <button class="filter-btn" data-filter="caliente">
-                        Calientes
+                    <button class="filter-btn" data-filter="cafe" data-key="cafe">
+                        Café
                     </button>
 
-                    <button class="filter-btn" data-filter="frio">
-                        Fríos
+                    <button class="filter-btn" data-filter="miel" data-key="miel">
+                        Miel
                     </button>
 
-                    <button class="filter-btn" data-filter="premium">
-                        Premium
+                    <button class="filter-btn" data-filter="cacao" data-key="cacao">
+                        Cacao
+                    </button>
+
+                    <button class="filter-btn" data-filter="sal" data-key="sal">
+                        Sal
                     </button>
 
                 </div>
@@ -130,23 +134,25 @@
 
                 <!-- ITEM -->
 
-                <div class="catalog-card" data-category="caliente">
+                <div class="catalog-card" data-category="cafe">
 
                     <div class="coffee-circle">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqtzZUueymRdZEOi-ilL8rNSrnztdapGIAcQ8yv8K7-oL8giAjRb6B9EKLzauEBYNNoz506RPrxhP9cTSPGFRo4NpOCj37pgtGMFklOmE&s=10"
-                            alt="Espreso_italiano">
+                        <img src="img_videos/Cafe blend.webp" alt="Cafe_blend" loading="lazy">
                     </div>
 
                     <div class="coffee-info">
 
                         <div class="coffee-top">
-                            <h3>Espresso Italiano</h3>
-                            <span>S/ 8.00</span>
+                            <h3 data-key="cafe_blend">Cafe Blend</h3>
+                            <span data-key="precio_cafe_blend">S/ 18.00 - S/ 34.00</span>
                         </div>
 
-                        <p>
-                            Café intenso con aroma profundo y crema perfecta.
+                        <p data-key="descripcion_cafe_blend">
+                            Café que une lo mejor de cada grano para compensar la acidez, el cuerpo o los matices
+                            aromáticos.
                         </p>
+                        <p data-key="disponible_cafe_blend">Disponible en 250gr. y 500gr.</p>
+
 
                     </div>
 
@@ -154,23 +160,23 @@
 
                 <!-- ITEM -->
 
-                <div class="catalog-card" data-category="frio">
+                <div class="catalog-card" data-category="cafe">
 
                     <div class="coffee-circle">
-                        <img src="data:image/jpeg;base64,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"
-                            alt="Caramel Latte">
+                        <img src="img_videos/Cafe blend en granos.webp" alt="Cafe_blend_engranos" loading="lazy">
                     </div>
 
                     <div class="coffee-info">
 
                         <div class="coffee-top">
-                            <h3>Caramel Latte</h3>
-                            <span>S/ 12.50</span>
+                            <h3 data-key="cafe_blend_granos">Café Blend en granos</h3>
+                            <span data-key="precio_cafe_blend_granos">S/ 18.00 - S/ 34.00</span>
                         </div>
 
-                        <p>
-                            Latte cremoso con caramelo suave y espuma artesanal.
+                        <p data-key="descripcion_cafe_blend_granos">
+                            Combinación de diferentes granos para suavizar defectos y potenciar virtudes.
                         </p>
+                        <p data-key="disponible_cafe_blend_granos">Disponibilidad en 250gr. y 500gr.</p>
 
                     </div>
 
@@ -178,23 +184,24 @@
 
                 <!-- ITEM -->
 
-                <div class="catalog-card" data-category="caliente premium">
+                <div class="catalog-card" data-category="cafe">
 
                     <div class="coffee-circle">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUUL0KE3TZz3aL_cA54uggKA8EXp1JZEncBA&s"
-                            alt="Cappuccino Gold">
+                        <img src="img_videos/Cafe gourmet.webp" alt="Cafe_gourmet" loading="lazy">
                     </div>
 
                     <div class="coffee-info">
 
                         <div class="coffee-top">
-                            <h3>Cappuccino Gold</h3>
-                            <span>S/ 10.90</span>
+                            <h3 data-key="cafe_gourmet">Café Gourmet</h3>
+                            <span data-key="precio_cafe_gourmet">S/ 18.00 - S/ 34.00</span>
                         </div>
 
-                        <p>
-                            Balance perfecto entre espresso, leche y espuma.
+                        <p data-key="descripcion_cafe_gourmet">
+                            Café de cosecha manual y selectiva de frutos maduros.
                         </p>
+                        <p data-key="disponible_cafe_gourmet">Disponible en 250gr. y 500gr.</p>
+
 
                     </div>
 
@@ -202,23 +209,23 @@
 
                 <!-- ITEM -->
 
-                <div class="catalog-card" data-category="caliente premium">
+                <div class="catalog-card" data-category="cafe">
 
                     <div class="coffee-circle">
-                        <img src="https://milk.co.uk/wp-content/uploads/2022/02/Optimised-300x300.jpg"
-                            alt="Mocha_Deluxe">
+                        <img src="img_videos/Cafe pergamino.webp" alt="Cafe_pergamino" loading="lazy">
                     </div>
 
                     <div class="coffee-info">
 
                         <div class="coffee-top">
-                            <h3>Mocha Deluxe</h3>
-                            <span>S/ 13.00</span>
+                            <h3 data-key="cafe_pergamino">Café Pergamino</h3>
+                            <span data-key="precio_cafe_pergamino">S/ 20.00 - S/ 38.00</span>
                         </div>
 
-                        <p>
-                            Chocolate premium mezclado con espresso intenso.
+                        <p data-key="descripcion_cafe_pergamino">
+                            Estado intermedio del grano de café, con cáscara removida pero sin pulir.
                         </p>
+                        <p data-key="disponible_cafe_pergamino">Disponible en 500gr. y 1 kg.</p>
 
                     </div>
 
@@ -226,48 +233,197 @@
 
                 <!-- ITEM -->
 
-                <div class="catalog-card" data-category="frio">
+                <!-- CACAO 1 -->
+
+                <div class="catalog-card" data-category="cacao">
 
                     <div class="coffee-circle">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl5XcVpIK2ukp9NMPsWW5-NIncHgEtwAC6zg&s"
-                            alt="Iced Coffee">
+                        <img src="img_videos/Cacao en polvo.webp" alt="Cacao_en_polvo" loading="lazy">
                     </div>
 
                     <div class="coffee-info">
 
                         <div class="coffee-top">
-                            <h3>Iced Coffee</h3>
-                            <span>S/ 11.50</span>
+                            <h3 data-key="cacao_en_polvo">Cacao en Polvo</h3>
+                            <span data-key="precio_cacao_en_polvo">S/ 9.50 - S/ 11.50 - S/ 30.00</span>
                         </div>
 
-                        <p>
-                            Café frío refrescante con notas dulces y cremosas.
+                        <p data-key="descripcion_cacao_en_polvo">
+                            Intenso sabor amargo, color marrón y textura fina.
                         </p>
+                        <p data-key="disponible_cacao_en_polvo">Disponible en 100gr. y 150gr. y 500gr.</p>
 
                     </div>
 
                 </div>
 
-                <!-- ITEM -->
+                <!-- CACAO 2 -->
 
-                <div class="catalog-card" data-category="frio premium">
+                <div class="catalog-card" data-category="cacao">
 
                     <div class="coffee-circle">
-                        <img src="https://starbucks-bqexpresss.myshopify.com/cdn/shop/products/vainilla_cream-01_large.jpg?v=1418229825"
-                            alt="Vanilla Cream">
+                        <img src="img_videos/Pasta de cacao.webp" alt="Pasta_de_cacao" loading="lazy">
                     </div>
 
                     <div class="coffee-info">
 
                         <div class="coffee-top">
-                            <h3>Vanilla Cream</h3>
-                            <span>S/ 12.00</span>
+                            <h3 data-key="pasta_de_cacao">Pasta de cacao</h3>
+                            <span data-key="precio_pasta_de_cacao">S/ 9.50 - S/ 11.50</span>
                         </div>
 
-                        <p>
-                            Delicada combinación de vainilla y café artesanal.
+                        <p data-key="descripcion_pasta_de_cacao">
+                            Pasta natural de cacao con sabor intenso y auténtico, fuente de todo chocolate.
                         </p>
+                        <p data-key="disponible_pasta_de_cacao">Disponible en 80gr. y 130gr.</p>
 
+                    </div>
+
+                </div>
+
+                <!-- CACAO 3 -->
+
+                <div class="catalog-card" data-category="cacao">
+
+                    <div class="coffee-circle">
+                        <img src="img_videos/Cascarilla de cacao.webp" alt="Cascarilla_de_cacao" loading="lazy">
+                    </div>
+
+                    <div class="coffee-info">
+
+                        <div class="coffee-top">
+                            <h3 data-key="cascarilla_de_cacao">Cascarilla de Cacao</h3>
+                            <span data-key="precio_cascarilla_de_cacao">S/ 4.00</span>
+                        </div>
+
+                        <p data-key="descripcion_cascarilla_de_cacao">
+                            Capa delgada y fibrosa que recubre el grano de cacao, rica en antioxidantes, fibra y
+                            magnesio.
+                        </p>
+                        <p data-key="disponible_cascarilla_de_cacao">Disponible en 100 gr.</p>
+
+
+                    </div>
+
+                </div>
+
+                <!-- CACAO 4 -->
+
+                <div class="catalog-card" data-category="cacao">
+
+                    <div class="coffee-circle">
+                        <img src="img_videos/Nibs de cacao.webp" alt="Nibs_de_cacao" loading="lazy">
+                    </div>
+
+                    <div class="coffee-info">
+
+                        <div class="coffee-top">
+                            <h3 data-key="nibs_de_cacao">Nibs de Cacao</h3>
+                            <span data-key="precio_nibs_de_cacao">S/ 7.00</span>
+                        </div>
+
+                        <p data-key="descripcion_nibs_de_cacao">
+                            Trozos crocantes de cacao puro con sabor intenso.
+                        </p>
+                        <p data-key="disponible_nibs_de_cacao">Disponible en 100 gr.</p>
+
+                    </div>
+
+                </div>
+
+                <!-- MIEL -->
+
+                <div class="catalog-card" data-category="miel">
+
+                    <div class="coffee-circle">
+                        <img src="img_videos/Miel de abeja.webp" alt="Miel_de_abeja" loading="lazy">
+                    </div>
+
+                    <div class="coffee-info">
+
+                        <div class="coffee-top">
+                            <h3 data-key="miel_de_abeja">Miel de Abeja</h3>
+                            <span data-key="precio_miel_de_abeja">S/ 15.00 - S/ 22.00 - S/ 40.00</span>
+                        </div>
+
+                        <p data-key="descripcion_miel_de_abeja">
+                            Miel natural artesanal con sabor suave y dulce.
+                        </p>
+                        <p data-key="disponible_miel_de_abeja">
+                            Disponible en frascos de 300 ml, 500 ml y 1 L. </p>
+
+                    </div>
+
+                </div>
+
+                <!-- SAL 1 -->
+
+                <div class="catalog-card" data-category="sal">
+
+                    <div class="coffee-circle">
+                        <img src="img_videos/Sal de grano fino.webp" alt="Sal_de_grano_fino" loading="lazy">
+                    </div>
+
+                    <div class="coffee-info">
+
+                        <div class="coffee-top">
+                            <h3 data-key="sal_de_grano_fino">Sal de Grano Fino</h3>
+                            <span data-key="precio_sal_de_grano_fino">S/ 10.00 - S/ 18.00</span>
+                        </div>
+
+                        <p data-key="descripcion_sal_de_grano_fino">
+                            Sal fina natural ideal para cocina gourmet, rápida disolución en líquidos y facilidad para
+                            adherirse a los alimentos.
+                        </p>
+                        <p data-key="disponible_sal_de_grano_fino">Disponible en 500gr. y 1 kg.</p>
+
+                    </div>
+
+                </div>
+
+                <!-- SAL 2 -->
+
+                <div class="catalog-card" data-category="sal">
+
+                    <div class="coffee-circle">
+                        <img src="img_videos/Sal de grano semigrueso.webp" alt="Sal_de_grano_semigrueso" loading="lazy">
+                    </div>
+
+                    <div class="coffee-info">
+
+                        <div class="coffee-top">
+                            <h3 data-key="sal_de_grano_semigrueso">Sal Semigruesa</h3>
+                            <span data-key="precio_sal_de_grano_semigrueso">S/ 10.00 - S/ 18.00</span>
+                        </div>
+
+                        <p data-key="descripcion_sal_de_grano_semigrueso">
+                            Aporta textura crujiente, retiene la humedad en las carnes y conserva una mayor cantidad de
+                            minerales naturales.
+                        </p>
+                        <p data-key="disponible_sal_de_grano_semigrueso">Disponible en 500gr. y 1 kg.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="catalog-card" data-category="sal">
+
+                    <div class="coffee-circle">
+                        <img src="img_videos/Sal de grano grueso.webp" alt="Sal_de_grano_grueso" loading="lazy">
+                    </div>
+
+                    <div class="coffee-info">
+
+                        <div class="coffee-top">
+                            <h3 data-key="sal_de_grano_grueso">Sal Gruesa</h3>
+                            <span data-key="precio_sal_de_grano_grueso">S/ 10.00 - S/ 18.00</span>
+                        </div>
+
+                        <p data-key="descripcion_sal_de_grano_grueso">
+                            No recomendable en alimentos, usado para aliviar dolores de rodilla y articulaciones.
+                            Disponible en 500gr. y 1 kg.
+                        </p>
+                        <p data-key="disponible_sal_de_grano_grueso">Disponible en 500gr. y 1 kg.</p>
                     </div>
 
                 </div>
@@ -356,79 +512,79 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
 
-    const searchInput = document.getElementById("searchInput");
+        const searchInput = document.getElementById("searchInput");
 
-    const filterButtons = document.querySelectorAll(".filter-btn");
+        const filterButtons = document.querySelectorAll(".filter-btn");
 
-    const cards = document.querySelectorAll(".catalog-card");
+        const cards = document.querySelectorAll(".catalog-card");
 
-    let currentFilter = "all";
+        let currentFilter = "all";
 
-    /* BUSCADOR */
+        /* BUSCADOR */
 
-    searchInput.addEventListener("input", filterProducts);
+        searchInput.addEventListener("input", filterProducts);
 
-    /* FILTROS */
+        /* FILTROS */
 
-    filterButtons.forEach(button => {
+        filterButtons.forEach(button => {
 
-        button.addEventListener("click", () => {
+            button.addEventListener("click", () => {
 
-            filterButtons.forEach(btn =>
-                btn.classList.remove("active")
-            );
+                filterButtons.forEach(btn =>
+                    btn.classList.remove("active")
+                );
 
-            button.classList.add("active");
+                button.classList.add("active");
 
-            currentFilter = button.dataset.filter;
+                currentFilter = button.dataset.filter;
 
-            filterProducts();
+                filterProducts();
+            });
         });
-    });
 
-    /* FUNCIÓN */
+        /* FUNCIÓN */
 
-    function filterProducts() {
+        function filterProducts() {
 
-        const searchText =
-            searchInput.value.toLowerCase();
+            const searchText =
+                searchInput.value.toLowerCase();
 
-        cards.forEach(card => {
+            cards.forEach(card => {
 
-            const title =
-                card.querySelector("h3")
-                    .textContent
-                    .toLowerCase();
+                const title =
+                    card.querySelector("h3")
+                        .textContent
+                        .toLowerCase();
 
-            const category =
-                card.dataset.category;
+                const category =
+                    card.dataset.category;
 
-            const matchesSearch =
-                title.includes(searchText);
+                const matchesSearch =
+                    title.includes(searchText);
 
-            const matchesFilter =
-                currentFilter === "all" ||
-                category.includes(currentFilter);
+                const matchesFilter =
+                    currentFilter === "all" ||
+                    category.includes(currentFilter);
 
-            if (matchesSearch && matchesFilter) {
+                if (matchesSearch && matchesFilter) {
 
-                card.style.display = "flex";
+                    card.style.display = "flex";
 
-            } else {
+                } else {
 
-                card.style.display = "none";
-            }
-        });
-    }
+                    card.style.display = "none";
+                }
+            });
+        }
 
-</script>
+    </script>
 
 </body>
 
-<script src="js/script.js"></script>
+<script defer src="js/script.js"></script>
 
 </html>

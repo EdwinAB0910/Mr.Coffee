@@ -757,8 +757,24 @@ body {
 @media (max-width: 768px) {
 
     .navbar {
-
         padding: 15px;
+    }
+
+    .navbar-collapse {
+
+        text-align: center;
+
+        background:
+            linear-gradient(rgba(0, 0, 0, .82),
+                rgba(0, 0, 0, .82));
+
+        backdrop-filter: blur(8px);
+
+        border-radius: 20px;
+
+        padding: 35px;
+
+        margin-top: 20px;
     }
 
     .navbar-brand {
@@ -768,21 +784,11 @@ body {
         letter-spacing: 2px;
     }
 
-    .brand-logo {
-
-        width: 65px;
-
-        height: 65px;
-    }
-
-    .navbar-collapse {
-
-        padding: 28px 20px;
-    }
-
     .nav-link {
 
-        font-size: .72rem;
+        font-size: .65rem;
+
+        padding-bottom: 30px;
     }
 
     .nav-flag {
@@ -796,16 +802,18 @@ body {
 
         align-items: center;
 
-        padding-left: 125px;
+        padding-left: 128px;
 
         padding-bottom: 10px;
     }
 
     .owner-signature {
 
-        font-size: 1.5rem;
+        margin: 20px 0 0;
 
-        line-height: .7;
+        font-size: 1.8rem;
+
+        text-align: center;
     }
 
     /* HERO */
